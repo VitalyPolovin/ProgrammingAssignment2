@@ -31,14 +31,14 @@ really a list containing a function to
 
     makeVector <- function(x = numeric()) {
             m <- NULL
-            set <- function(y) {
+            set <- function(y) {   #set value of vector
                     x <<- y
                     m <<- NULL
             }
-            get <- function() x
-            setmean <- function(mean) m <<- mean
-            getmean <- function() m
-            list(set = set, get = get,
+            get <- function() x  #get the value of the vector
+            setmean <- function(mean) m <<- mean  # set value of the mean
+            getmean <- function() m  # gets value of mean
+            list(set = set, get = get,  
                  setmean = setmean,
                  getmean = getmean)
     }
